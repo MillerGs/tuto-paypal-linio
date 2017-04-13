@@ -1,0 +1,14 @@
+------------------------------------------------------
+TUTORIAL:
+INTEGRACIÓN DE PAYPAL Y LINIO A MI SITIO WEB
+------------------------------------------------------
+
+1.-	INTRODUCCIÓN
+	-------------
+	Muchos de nosotros realizamos proyectos web para algún tipo de comercio, sea de productos o servicios (tangibles o no); sea proyectos personales o para nuestros clientes. hoy en día es más que común realizar compras em línea, la facilidad y enorme medios que nos permiten este comercio es innumerable.
+
+	Nuestros proyectos, muchos de los cuales es "vender por internet", clientes que solicitan amenudo una página web donde muestren sus productos y vendan a través de ella, herramientas de e-commerce existen muchas de open source como también sus versiones de paga y es muy probable que, a lo mucho que se ha llegado es a implementar alguna tienda virtual con alguna de ellas.
+
+	Luego de implementarlas (mostrar productos y/o servicios en línea), la pregunta es: ¿Cómo obtenemos el dinero por las ventas?, sabemos que las entidades financieras hoy en día brindan soporte para transacciones de dinero en línea y debemos aprovechar cada una de ellas. Pero, existen muchas en nuestro país y, lógicamente, a nivel mundial. ¿Qué medio utilizar para recibir los pagos?
+
+	Por otro lado, muchos de las pequeñas y medianas empresas en nuestro país cuentan con un sitio web pero surge la necesidad de estar inmersas en los grandes sitios de venta en línea ya existentes; hablamos del caso como Mercado Libre, OLX, Línio, entre otras. La iniciativa de este tutorial es integrar nuestro sitio web incluyendo nuestros productos en estos "grandes" del Market Place, por ellos utilizaremos herramientas para realziar la integración.
