@@ -1,0 +1,18 @@
+<?php
+require   'vendor/autoload.php';
+
+define("SITE_URL" , "http://localhost/tuto-paypal-linio/paypal-sdk");
+
+
+class start{
+    
+    function apiContext(){
+        $apiContext  = new \PayPal\Rest\ApiContext(
+            new \PayPal\Auth\OAuthTokenCredential(
+                '', // ClientID
+                ''  // ClientSecret
+            )
+        );
+        return $apiContext;
+    }
+}
