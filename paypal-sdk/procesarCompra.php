@@ -66,7 +66,7 @@ class procesarCompra{
             ->setTransactions(array($transaction));
         
         $request = clone $payment;
-        
+                
         try {
             $payment->create($apiContext);
         }catch (Exception $ex) {

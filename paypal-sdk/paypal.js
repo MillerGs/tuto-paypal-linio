@@ -129,11 +129,12 @@ $('#btnPagar').click(function(){
         url:   'procesarCompra.php',
         type:  'post',
         beforeSend: function () {
-            console.log('beforeSend');
+            //console.log('beforeSend');
         },
         success:  function (response) {
             console.log(response);
-             window.open(response, '_blank');
+             /*window.open(response, '_blank');*/
+            $("<a>").attr("href", response).attr("target", "_blank")[0].click();
         }
     });
 });
