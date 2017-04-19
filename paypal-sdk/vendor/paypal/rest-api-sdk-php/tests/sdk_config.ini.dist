@@ -1,7 +1,7 @@
 ;Account credentials from developer portal
 [Account]
-acct1.ClientId = AXvS81K6PQijtYVvJqETbo5Y3iKsKn3pz27FR7JT4OKUcxlpiTutTJwNFgSWg8cluBk4MX9Fjot0GROSS
-acct1.ClientSecret = EPSyYVCvdi5JloHa5xlVXY9vXAfgdSmHIRAC3LLy4KxAV_e4vVaL1uLMD2LS0nXn7NSiVVDPfLinzTfhh
+acct1.ClientId = // Cliente Id sin comillas
+acct1.ClientSecret = // Cliente Secret - sin comillas
 
 acct2.ClientId = TestClientId
 acct2.ClientSecret = TestClientSecret
