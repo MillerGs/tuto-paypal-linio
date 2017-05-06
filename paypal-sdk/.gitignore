@@ -1,3 +1,4 @@
+nbproject/
 node_modules
 app/start.php
 vendor/paypal/rest-api-sdk-php/tests/sdk_config.ini

@@ -10,14 +10,9 @@
 
         <title>API Seller Celler Linio</title>
 
-        <!-- Bootstrap core CSS -->
-        <!-- Custom styles for this template -->
-        <!--        <link href="view/assets/css/justified-nav.css" rel="stylesheet">-->
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
     </head>
 
@@ -34,9 +29,9 @@
                         <ul class="nav nav-justified">
                             <li class="active"><a href="vista-consulta-get.php">Consulta GET</a></li>
                             <li><a href="vista-consulta-post.php">Consulta POST</a></li>
-                            <li><a href="http://blog.millergomez.com/" target="_blank">Millergs</a></li>
-                            <li><a href="http://blog.millergomez.com/" target="_blank">Visita mi blog</a></li>
-                            <li><a href="http://blog.millergomez.com/" target="_blank">Contact</a></li>
+                            <li><a href="http://www.millergomez.com/" target="_blank">Millergs</a></li>
+                            <li><a href="http://www.millergomez.com/" target="_blank">Visita mi blog</a></li>
+                            <li><a href="http://www.millergomez.com/" target="_blank">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -58,11 +53,11 @@
                                             <label for="acction" class="control-label">Acction</label>
                                             <select class="form-control input-sm" id="action" name="action">
                                                 <option value="">- Select an API Call -</option>
-                                                <!--                                                <option value="FeedCancel">FeedCancel</option>
-                                                                                                <option value="FeedCount">FeedCount</option>
-                                                                                                <option value="FeedList">FeedList</option>
-                                                                                                <option value="FeedOffsetList">FeedOffsetList</option>
-                                                                                                <option value="FeedStatus">FeedStatus</option>-->
+                                                <option value="FeedCancel">FeedCancel</option>
+                                                <option value="FeedCount">FeedCount</option>
+                                                <option value="FeedList">FeedList</option>
+                                                <option value="FeedOffsetList">FeedOffsetList</option>
+                                                <option value="FeedStatus">FeedStatus</option>
                                                 <option value="GetBrands">GetBrands</option>
                                                 <option value="GetCategoriesByAttributeSet">GetCategoriesByAttributeSet</option>
                                                 <option value="GetCategoryAttributes">GetCategoryAttributes</option>
@@ -115,10 +110,9 @@
                 </div>
             </div>
 
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
+            <script src="js/jquery.min.js"></script>
             <!-- Latest compiled and minified JavaScript -->
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+            <script src="js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
             <script>
                 function consultaGET() {
@@ -128,7 +122,8 @@
                         action: action,
                         output_format: output_format
                     }, function (data) {
-//                        $('#result').html(data);
+                        //console.log(data);
+                        //$('#result').html(data);
                         if (output_format === 'JSON' && action === 'GetProducts') {
                             GetProducts(data);
                         }
@@ -151,7 +146,7 @@
                             + '</tr></thead> <tbody>';
                     
                     for (var i in products) {
-                        console.log(products[i]);  // (o el campo que necesites)
+                        //console.log(products[i]);  // (o el campo que necesites)
                         html += '<tr>'
                                 + '<td>' + products[i].SellerSku + '</td>'
                                 + '<td>' + products[i].Name + '</td>'
