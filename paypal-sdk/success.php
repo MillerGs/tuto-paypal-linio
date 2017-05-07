@@ -4,6 +4,10 @@ use PayPal\Api\Payment;
 use PayPal\Api\PaymentExecution;
 
 require "app/start.php";
+
+$start = new start();
+$apiContext = $start->apiContext();
+
 if(!isset($_GET["success"] , $_GET["paymentId"] , $_GET["PayerID"])){
 	die();
 }
