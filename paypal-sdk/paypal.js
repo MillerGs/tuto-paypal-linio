@@ -124,6 +124,8 @@ $('#btnPagar').click(function(){
     oData.items = _items;
     oData.total = _total;
     
+    //console.log(oData);
+    
     $.ajax({
         data:  oData,
         url:   'procesarCompra.php',
